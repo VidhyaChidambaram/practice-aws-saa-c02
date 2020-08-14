@@ -42,6 +42,24 @@
     * For each GB of data transferred through the load balancer
 - Types : Classic ELB, Application Load balancer
 - ELB Security : AWS Security Groups 
+
+# Auto Scaling
+- Add or remove servers based on demand
+- This is a service provided by AWS, not a part of physical infrastructure, so it can span multiple
+AZ and availability zone within VPC.
+- Autoscaling configuration:
+    
+    * Launch configuration - the template used when autoscaling needs to add a server
+    to your autoscaling group.
+    
+    * Auto Scaling Group - the settings and rules that define when a EC2 server is being 
+    automatically added or removed. (Eg: Cpu Utilization > 70)
+    
+- No cost to set up autoscaling, but charged for resources provisioned by autoscaling (additional
+servers provisioned in free tier)
+
+
+
     
     
 
