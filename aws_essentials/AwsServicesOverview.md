@@ -58,6 +58,13 @@ AZ and availability zone within VPC.
 - No cost to set up autoscaling, but charged for resources provisioned by autoscaling (additional
 servers provisioned in free tier)
 
+# AWS Lambda
+- Serverless architecture
+- 1 million requests free per month
+- Charged based on number of executions and duration of execution for requests
+- Option to be included to execute within VPC and access to KMS
+
+
 
 
     

@@ -16,12 +16,16 @@ and functional.
 
 ## How websites are located
 - Domain name entered by user
-- Computer needs IP address to route to server
+- Computer / Web browsers needs IP address to locate it on the internet
 - DNS Server : Database of domain name and IP addresses, DNS Servers usually run by a third party.
 
 So, when we purchase a domain name, the Domain Registration process helps update our details
 (Key = friendly_dns_name, Value = "IP Address") to the various DNS Server providers across the world.
 
+## How is this IP Address relevant for AWS?
+- This corresponds to the IP Address of the ELB (Elastic load balancer) if present
+
+## From DNS name to webserver
 Computer invokes dnsName and routes to internet <br/>
 &downarrow; <br/>
 Routed to DNS Servers <br/>
@@ -41,6 +45,8 @@ Passed via NACL <br/>
 Checked at security Group <br/>
 &downarrow; <br/>
 Routed to Web Server where website is hosted.
+
+
 
 ## Pricing Overview
 - No free tier
