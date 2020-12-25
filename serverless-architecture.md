@@ -164,8 +164,12 @@ Cognito will return the session state in response. Next request will use the ses
  
 - Use admin-initiate-auth command from above, give user name, password and get the tokens.
 - Use the "IdToken" from the cognito Auth response and add a "Authorization" header and add this token on the header.
+- Upon entering the right Token, we can now invoke the endpoint from a rest client (Eg. REST Client / Postman), and get a HTTP 200.
 
   
+#### Update Demo App to include authentication 
+- Add Cognito client to the generated javascript client
+- Retrieve the token header for "IDToken" and pass it to the REST API as a "Authorization" header to invoke the API Gateway endpoint.
 
 
 
